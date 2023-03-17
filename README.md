@@ -24,7 +24,7 @@ Ideally the only points of difference would be:
 
 I don't know whether I have completely succeeded but I think I've come pretty close.
 
-I haven't exhaustively tested this, but it seems to work, at least with Skyrim GOG 1.6.659. Your mileage may vary with other Skyrim versions. I *am* using the Address Library, so hopefully not.
+I haven't exhaustively tested this, but it seems to work, at least with Skyrim GOG 1.6.659. Your mileage may vary with other Skyrim versions. FWIW I *am* using the Address Library.
 
 ## Credit 
 I couldn't have done this without either:
