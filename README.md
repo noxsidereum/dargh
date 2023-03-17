@@ -24,7 +24,7 @@ Ideally the only points of difference would be:
 
 I don't know whether I have completely succeeded but I think I've come pretty close.
 
-I haven't exhaustively tested this, especially all the condition functions, but it seems to be working correctly, at least with Skyrim GOG 1.6.659. Your mileage may vary with other Skyrim versions. FWIW I *am* using the Address Library.
+I haven't exhaustively tested this, especially all the condition functions, but it seems to be working correctly, at least with Skyrim GOG 1.6.659. With other Skyrim versions your mileage may vary. FWIW I *am* using the Address Library.
 
 ## Credit 
 I couldn't have done this without either:
