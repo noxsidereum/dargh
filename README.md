@@ -9,7 +9,7 @@ I wanted to know how Felisky's famous [Dynamic Animation Replacer](https://www.n
 
 Unfortunately he/she does not make their source code available. So I reverse-engineered it. 
 
-I began with the DAR v1.1.2 DLL (released 30 Dec 2021) as my reference, later updated my code to reflect changes in the DAR v1.1.3 DLL, after that was released in Jan 2023. 
+Most of my analysis was done on the DAR v1.1.2 DLL (released 30 Dec 2021). I later updated my code to reflect analysed changes in the DAR v1.1.3 DLL, after that was released in Jan 2023. I downloaded both of those DLLs from the above-referenced link.
 
 This repo captures the result.
 
