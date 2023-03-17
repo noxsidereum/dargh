@@ -1,5 +1,5 @@
 # `dargh`
-An open source version of the Dynamic Animation Replacer (DAR) for Skyrim SE that aims for 100% functional equivalence.
+An open source version of the Dynamic Animation Replacer (DAR) for Skyrim SE, that aims for 100% functional equivalence.
 
 by nox sidereum
 
