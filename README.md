@@ -15,7 +15,7 @@ This repo captures the result.
 
 My goal was to produce readable, well-documented source code, compiling to a DLL that is 100% functionally equivalent to DAR. 
 
-For better or worse.
+And the algorithms, methods, hooks and trampolines used here to do the animation replacing are the same. I believe my "reverse translation" is pretty faithful to the original. For better or worse.
 
 Ideally the only points of difference would be: 
 
