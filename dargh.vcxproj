@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{deb9cd1f-8035-4c1b-a871-406e513c46a2}</ProjectGuid>
+    <RootNamespace>dargh</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>dargh</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>$(ProjectName)</TargetName>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>$(ProjectName)</TargetName>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;DARGOG_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>Default</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>SKSE/IPrefix.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;DARGOG_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>Default</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>SKSE/IPrefix.h</ForcedIncludeFiles>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) $(SolutionDir)Data\SKSE\Plugins</Command>
+      <Message>Copy DLL to mod folder</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;DARGOG_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>Default</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>SKSE/IPrefix.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;DARGOG_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>Default</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>SKSE/IPrefix.h</ForcedIncludeFiles>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) $(SolutionDir)Data\SKSE\Plugins</Command>
+      <Message>Copy DLL to mod folder</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Conditions.cpp" />
+    <ClCompile Include="src\DARProject.cpp" />
+    <ClCompile Include="src\DARProjectRegistry.cpp" />
+    <ClCompile Include="src\Hooks.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\RE\Offsets.cpp" />
+    <ClCompile Include="src\Plugin.cpp" />
+    <ClCompile Include="src\RE\B\BSSpinLock.cpp" />
+    <ClCompile Include="src\DebugUtils.cpp" />
+    <ClCompile Include="src\RE\S\Setting.cpp" />
+    <ClCompile Include="src\SKSE\BranchTrampoline.cpp" />
+    <ClCompile Include="src\SKSE\IDataStream.cpp" />
+    <ClCompile Include="src\SKSE\IDebugLog.cpp" />
+    <ClCompile Include="src\SKSE\IErrors.cpp" />
+    <ClCompile Include="src\SKSE\IFileStream.cpp" />
+    <ClCompile Include="src\SKSE\SafeWrite.cpp" />
+    <ClCompile Include="src\Trampolines.cpp" />
+    <ClCompile Include="src\RE\T\TESDataHandler.cpp" />
+    <ClCompile Include="src\Utilities.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\RE\B\BSTList.h" />
+    <ClInclude Include="include\Conditions.h" />
+    <ClInclude Include="include\DARLink.h" />
+    <ClInclude Include="include\DARProject.h" />
+    <ClInclude Include="include\DARProjectRegistry.h" />
+    <ClInclude Include="include\Hooks.h" />
+    <ClInclude Include="include\RE\A\ActorValueOwner.h" />
+    <ClInclude Include="include\RE\A\ActorValues.h" />
+    <ClInclude Include="include\RE\B\BGSBehaviorGraphModel.h" />
+    <ClInclude Include="include\RE\B\BGSKeyword.h" />
+    <ClInclude Include="include\RE\B\BGSKeywordForm.h" />
+    <ClInclude Include="include\RE\B\BGSLocationRefType.h" />
+    <ClInclude Include="include\RE\B\BSExtraData.h" />
+    <ClInclude Include="include\RE\B\BSReadWriteLock.h" />
+    <ClInclude Include="include\RE\C\Calendar.h" />
+    <ClInclude Include="include\RE\E\EffectSetting.h" />
+    <ClInclude Include="include\RE\E\ExtraContainerChanges.h" />
+    <ClInclude Include="include\RE\E\ExtraDataList.h" />
+    <ClInclude Include="include\RE\E\ExtraDataTypes.h" />
+    <ClInclude Include="include\RE\E\ExtraLocationRefType.h" />
+    <ClInclude Include="include\RE\F\FormTypes.h" />
+    <ClInclude Include="include\RE\h\hkbBindable.h" />
+    <ClInclude Include="include\RE\h\hkbNode.h" />
+    <ClInclude Include="include\RE\h\hkReferencedObject.h" />
+    <ClInclude Include="include\RE\I\InventoryChanges.h" />
+    <ClInclude Include="include\RE\M\MagicItem.h" />
+    <ClInclude Include="include\RE\M\MagicTarget.h" />
+    <ClInclude Include="include\RE\Offsets.h" />
+    <ClInclude Include="include\Plugin.h" />
+    <ClInclude Include="include\RE\A\Actor.h" />
+    <ClInclude Include="include\RE\A\AIProcess.h" />
+    <ClInclude Include="include\RE\A\ActorState.h" />
+    <ClInclude Include="include\RE\B\BGSLocation.h" />
+    <ClInclude Include="include\RE\B\BGSVoiceType.h" />
+    <ClInclude Include="include\RE\B\BSAnimationGraphManager.h" />
+    <ClInclude Include="include\RE\B\BShkbAnimationGraph.h" />
+    <ClInclude Include="include\RE\B\BSSpinLock.h" />
+    <ClInclude Include="include\RE\B\BSString.h" />
+    <ClInclude Include="include\DebugUtils.h" />
+    <ClInclude Include="include\RE\H\hkbAnimationBindingSet.h" />
+    <ClInclude Include="include\RE\H\hkbCharacterData.h" />
+    <ClInclude Include="include\RE\H\hkbCharacter.h" />
+    <ClInclude Include="include\RE\H\hkbCharacterSetup.h" />
+    <ClInclude Include="include\RE\H\hkbCharacterStringData.h" />
+    <ClInclude Include="include\RE\H\hkbClipGenerator.h" />
+    <ClInclude Include="include\RE\H\hkbContext.h" />
+    <ClInclude Include="include\RE\H\hkbProjectData.h" />
+    <ClInclude Include="include\RE\H\hkbProjectStringData.h" />
+    <ClInclude Include="include\RE\H\hkTypes.h" />
+    <ClInclude Include="include\RE\S\SettingCollection.h" />
+    <ClInclude Include="include\RE\S\SettingCollectionList.h" />
+    <ClInclude Include="include\RE\S\Sky.h" />
+    <ClInclude Include="include\RE\T\TESDataHandler.h" />
+    <ClInclude Include="include\RE\T\TESActorBaseData.h" />
+    <ClInclude Include="include\RE\T\TESActorBase.h" />
+    <ClInclude Include="include\RE\T\TESBoundObject.h" />
+    <ClInclude Include="include\RE\T\TESClass.h" />
+    <ClInclude Include="include\RE\T\TESCombatStyle.h" />
+    <ClInclude Include="include\RE\T\TESFaction.h" />
+    <ClInclude Include="include\RE\T\TESFile.h" />
+    <ClInclude Include="include\RE\T\TESForm.h" />
+    <ClInclude Include="include\RE\T\TESFullName.h" />
+    <ClInclude Include="include\RE\T\TESGlobal.h" />
+    <ClInclude Include="include\RE\T\TESModel.h" />
+    <ClInclude Include="include\RE\T\TESNPC.h" />
+    <ClInclude Include="include\RE\T\TESObject.h" />
+    <ClInclude Include="include\RE\T\TESObjectCELL.h" />
+    <ClInclude Include="include\RE\T\TESObjectREFR.h" />
+    <ClInclude Include="include\RE\T\TESRace.h" />
+    <ClInclude Include="include\RE\T\TESRaceForm.h" />
+    <ClInclude Include="include\RE\T\TESObjectWEAP.h" />
+    <ClInclude Include="include\RE\T\TESWeather.h" />
+    <ClInclude Include="include\RE\T\TESWorldSpace.h" />
+    <ClInclude Include="include\SKSE\BranchTrampoline.h" />
+    <ClInclude Include="include\SKSE\IDataStream.h" />
+    <ClInclude Include="include\SKSE\IDebugLog.h" />
+    <ClInclude Include="include\SKSE\IErrors.h" />
+    <ClInclude Include="include\SKSE\IFileStream.h" />
+    <ClInclude Include="include\SKSE\IPrefix.h" />
+    <ClInclude Include="include\SKSE\ITypes.h" />
+    <ClInclude Include="include\SKSE\PluginAPI.h" />
+    <ClInclude Include="include\SKSE\SafeWrite.h" />
+    <ClInclude Include="include\SKSE\skse_version.h" />
+    <ClInclude Include="include\RE\S\Setting.h" />
+    <ClInclude Include="include\Trampolines.h" />
+    <ClInclude Include="include\Utilities.h" />
+    <ClInclude Include="include\versionlibdb.h" />
+    <ClInclude Include="include\xbyak\xbyak.h" />
+    <ClInclude Include="include\xbyak\xbyak_mnemonic.h" />
+    <ClInclude Include="include\xbyak\xbyak_util.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

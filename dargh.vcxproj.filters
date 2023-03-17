@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\RE">
+      <UniqueIdentifier>{e91d814a-2439-4871-8097-3e2bcaf3a3e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RE\A">
+      <UniqueIdentifier>{bbf7d8e6-7e9e-42fc-a3d2-afb97d425b59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RE\B">
+      <UniqueIdentifier>{b619c8fe-2bf9-486a-bdc2-2ff7f5bfd681}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RE\H">
+      <UniqueIdentifier>{960ccc6b-e5d5-4bc9-9a85-01514b81f36f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RE\T">
+      <UniqueIdentifier>{28426f19-e59c-426a-9f8d-84f8957d2ddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\xbyak">
+      <UniqueIdentifier>{96111f6a-a8f4-4ced-afc4-caf9eee82d11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RE">
+      <UniqueIdentifier>{f6c6d360-ff34-4eb7-8baa-9b454519ffcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RE\B">
+      <UniqueIdentifier>{352c5772-c57c-43cf-a716-d57661e1a2c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RE\F">
+      <UniqueIdentifier>{4552fab8-1489-46d9-857c-ee9430790a08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RE\M">
+      <UniqueIdentifier>{2624c608-101c-48b9-a0f0-d740e1ad0ccb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RE\E">
+      <UniqueIdentifier>{c21563af-dff5-4a7f-8ff0-365493aa1bd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RE\I">
+      <UniqueIdentifier>{6b213f63-da09-4754-97ff-53d38171d5e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RE\S">
+      <UniqueIdentifier>{ea6b9130-2cf1-426f-8a17-517e2c4ae847}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SKSE">
+      <UniqueIdentifier>{3f39a741-1ba3-4f33-927b-bd402ef28c36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RE\T">
+      <UniqueIdentifier>{24d91d83-d266-40c2-b5f9-46ab0bd5e6ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SKSE">
+      <UniqueIdentifier>{4f718fca-48af-420d-8489-707759e99baf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RE\S">
+      <UniqueIdentifier>{2bc15077-5360-4a81-bc08-321657fd8243}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RE\C">
+      <UniqueIdentifier>{bc87e88d-5bc8-4cf2-b1ad-3e0b33b269fc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Plugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DebugUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Conditions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Trampolines.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RE\B\BSSpinLock.cpp">
+      <Filter>Source Files\RE\B</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DARProject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DARProjectRegistry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RE\T\TESDataHandler.cpp">
+      <Filter>Source Files\RE\T</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RE\Offsets.cpp">
+      <Filter>Source Files\RE</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SKSE\BranchTrampoline.cpp">
+      <Filter>Source Files\SKSE</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SKSE\SafeWrite.cpp">
+      <Filter>Source Files\SKSE</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SKSE\IDebugLog.cpp">
+      <Filter>Source Files\SKSE</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SKSE\IFileStream.cpp">
+      <Filter>Source Files\SKSE</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SKSE\IErrors.cpp">
+      <Filter>Source Files\SKSE</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RE\S\Setting.cpp">
+      <Filter>Source Files\RE\S</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SKSE\IDataStream.cpp">
+      <Filter>Source Files\SKSE</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Plugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\versionlibdb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DebugUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Conditions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Hooks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Trampolines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Utilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\A\Actor.h">
+      <Filter>Header Files\RE\A</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\A\ActorState.h">
+      <Filter>Header Files\RE\A</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\A\AIProcess.h">
+      <Filter>Header Files\RE\A</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\B\BGSLocation.h">
+      <Filter>Header Files\RE\B</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\B\BGSVoiceType.h">
+      <Filter>Header Files\RE\B</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\B\BSAnimationGraphManager.h">
+      <Filter>Header Files\RE\B</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\B\BShkbAnimationGraph.h">
+      <Filter>Header Files\RE\B</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\B\BSSpinLock.h">
+      <Filter>Header Files\RE\B</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\B\BSString.h">
+      <Filter>Header Files\RE\B</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\H\hkbAnimationBindingSet.h">
+      <Filter>Header Files\RE\H</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\H\hkbCharacterData.h">
+      <Filter>Header Files\RE\H</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\H\hkbCharacter.h">
+      <Filter>Header Files\RE\H</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\H\hkbCharacterSetup.h">
+      <Filter>Header Files\RE\H</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\H\hkbCharacterStringData.h">
+      <Filter>Header Files\RE\H</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\H\hkbClipGenerator.h">
+      <Filter>Header Files\RE\H</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\H\hkbContext.h">
+      <Filter>Header Files\RE\H</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\H\hkbProjectData.h">
+      <Filter>Header Files\RE\H</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\H\hkbProjectStringData.h">
+      <Filter>Header Files\RE\H</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\H\hkTypes.h">
+      <Filter>Header Files\RE\H</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\T\TESActorBaseData.h">
+      <Filter>Header Files\RE\T</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\T\TESActorBase.h">
+      <Filter>Header Files\RE\T</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\T\TESClass.h">
+      <Filter>Header Files\RE\T</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\T\TESCombatStyle.h">
+      <Filter>Header Files\RE\T</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\T\TESForm.h">
+      <Filter>Header Files\RE\T</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\T\TESFullName.h">
+      <Filter>Header Files\RE\T</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\T\TESGlobal.h">
+      <Filter>Header Files\RE\T</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\T\TESNPC.h">
+      <Filter>Header Files\RE\T</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\T\TESObjectCELL.h">
+      <Filter>Header Files\RE\T</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\T\TESObjectREFR.h">
+      <Filter>Header Files\RE\T</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\T\TESRace.h">
+      <Filter>Header Files\RE\T</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\T\TESRaceForm.h">
+      <Filter>Header Files\RE\T</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xbyak\xbyak.h">
+      <Filter>Header Files\xbyak</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xbyak\xbyak_mnemonic.h">
+      <Filter>Header Files\xbyak</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xbyak\xbyak_util.h">
+      <Filter>Header Files\xbyak</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\Offsets.h">
+      <Filter>Header Files\RE</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\F\FormTypes.h">
+      <Filter>Header Files\RE\F</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\M\MagicItem.h">
+      <Filter>Header Files\RE\M</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\E\EffectSetting.h">
+      <Filter>Header Files\RE\E</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\T\TESObjectWEAP.h">
+      <Filter>Header Files\RE\T</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\B\BGSKeywordForm.h">
+      <Filter>Header Files\RE\B</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\B\BGSKeyword.h">
+      <Filter>Header Files\RE\B</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\M\MagicTarget.h">
+      <Filter>Header Files\RE\M</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\A\ActorValueOwner.h">
+      <Filter>Header Files\RE\A</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\A\ActorValues.h">
+      <Filter>Header Files\RE\A</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\B\BSReadWriteLock.h">
+      <Filter>Header Files\RE\B</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\E\ExtraDataTypes.h">
+      <Filter>Header Files\RE\E</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\B\BSExtraData.h">
+      <Filter>Header Files\RE\B</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\E\ExtraDataList.h">
+      <Filter>Header Files\RE\E</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\E\ExtraContainerChanges.h">
+      <Filter>Header Files\RE\E</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\I\InventoryChanges.h">
+      <Filter>Header Files\RE\I</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\T\TESBoundObject.h">
+      <Filter>Header Files\RE\T</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\T\TESObject.h">
+      <Filter>Header Files\RE\T</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\T\TESWorldSpace.h">
+      <Filter>Header Files\RE\T</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\T\TESWeather.h">
+      <Filter>Header Files\RE\T</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\S\Sky.h">
+      <Filter>Header Files\RE\S</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\E\ExtraLocationRefType.h">
+      <Filter>Header Files\RE\E</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\B\BGSLocationRefType.h">
+      <Filter>Header Files\RE\B</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\T\TESFaction.h">
+      <Filter>Header Files\RE\T</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DARProjectRegistry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DARProject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DARLink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\T\TESDataHandler.h">
+      <Filter>Header Files\RE\T</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\B\BGSBehaviorGraphModel.h">
+      <Filter>Header Files\RE\B</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\T\TESModel.h">
+      <Filter>Header Files\RE\T</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\T\TESFile.h">
+      <Filter>Header Files\RE\T</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\B\BSTList.h">
+      <Filter>Header Files\RE\B</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SKSE\IPrefix.h">
+      <Filter>Header Files\SKSE</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SKSE\IErrors.h">
+      <Filter>Header Files\SKSE</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SKSE\IDataStream.h">
+      <Filter>Header Files\SKSE</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SKSE\BranchTrampoline.h">
+      <Filter>Header Files\SKSE</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SKSE\skse_version.h">
+      <Filter>Header Files\SKSE</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SKSE\SafeWrite.h">
+      <Filter>Header Files\SKSE</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\S\Setting.h">
+      <Filter>Header Files\RE\S</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\S\SettingCollection.h">
+      <Filter>Header Files\RE\S</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\S\SettingCollectionList.h">
+      <Filter>Header Files\RE\S</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SKSE\IFileStream.h">
+      <Filter>Header Files\SKSE</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SKSE\PluginAPI.h">
+      <Filter>Header Files\SKSE</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\C\Calendar.h">
+      <Filter>Header Files\RE\C</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\h\hkReferencedObject.h">
+      <Filter>Header Files\RE\H</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\h\hkbBindable.h">
+      <Filter>Header Files\RE\H</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RE\h\hkbNode.h">
+      <Filter>Header Files\RE\H</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SKSE\ITypes.h">
+      <Filter>Header Files\SKSE</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SKSE\IDebugLog.h">
+      <Filter>Header Files\SKSE</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
