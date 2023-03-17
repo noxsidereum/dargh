@@ -50,8 +50,8 @@ At least while that version is still being maintained.
 
 By sharing this code I'm hoping to achieve at least three objectives:
   1. Pedagogical. Help others, who like myself, would like to learn how this stuff actually works (documentation and examples are pretty sparse).
-  2. Potentially provide a platform for an improved version of DAR, e.g. you could fork this repo and add more conditions (see Conditions.cpp) for new types of conditional animations.
-  3. Provide an insurance policy - if a new release of DAR comes out which breaks things, and the author is unable or unwilling to update it, others might be willing to do it, referring back to this code.
+  2. Potentially provide a platform for an improved version of DAR. E.g. you could fork this repo and add more conditions (see Conditions.cpp) for new types of conditional animations.
+  3. Provide an insurance policy. If a new release of DAR comes out which breaks things, and the author is unable or unwilling to update it, others might be willing to do it, referring back to this code.
 
 Cool bananas.
 
